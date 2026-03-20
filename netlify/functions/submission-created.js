@@ -27,7 +27,7 @@ exports.handler = async function (event) {
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff;">
     <tr>
       <td align="center" style="padding:24px 16px;">
-        <table role="presentation" width="580" cellpadding="0" cellspacing="0" border="0" style="max-width:580px;width:100%;background-color:#0F0F0F;border-radius:12px;">
+        <table role="presentation" width="580" cellpadding="0" cellspacing="0" border="0" style="max-width:580px;width:100%;background-color:#1E1F23;border-radius:12px;border:1px solid #C9A96E;">
           <tr>
             <td style="padding:48px 24px;font-family:Georgia,'Times New Roman',serif;line-height:1.7;">
 
@@ -98,7 +98,7 @@ exports.handler = async function (event) {
 
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                 <tr>
-                  <td style="background-color:#1A1A1A;border:1px solid #2A2A2A;border-radius:8px;padding:24px;">
+                  <td style="background-color:#161718;border:1px solid #2A2A2A;border-radius:8px;padding:24px;">
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                       <tr><td style="font-family:Georgia,'Times New Roman',serif;font-size:15px;font-weight:bold;color:#C9A96E;padding-bottom:12px;">The daily rhythm after installation:</td></tr>
                       <tr><td style="font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#D4CFC8;padding-bottom:8px;">60 seconds in the morning. See what today requires.</td></tr>
@@ -118,7 +118,7 @@ exports.handler = async function (event) {
                       <tr><td style="font-family:Georgia,'Times New Roman',serif;font-size:15px;color:#A0998F;text-align:center;padding-bottom:16px;">The first 50 members get locked in at $9/month for life.<br/>After that, it's $19.</td></tr>
                       <tr>
                         <td align="center" style="padding-bottom:24px;">
-                          <a href="https://structured-achievement.netlify.app/#pricing" style="display:inline-block;padding:14px 32px;background-color:#1A1A1A;border:1px solid rgba(201,169,110,0.3);border-radius:8px;color:#C9A96E;text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:14px;letter-spacing:1px;">See the full system</a>
+                          <a href="https://structured-achievement.netlify.app/#pricing" style="display:inline-block;padding:14px 32px;background-color:#161718;border:1px solid rgba(201,169,110,0.4);border-radius:8px;color:#C9A96E;text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:14px;letter-spacing:1px;">See the full system</a>
                         </td>
                       </tr>
                       <tr><td style="font-family:Georgia,'Times New Roman',serif;font-size:13px;color:#A0998F;text-align:center;">You already know the pattern you're stuck in.<br/>This is the infrastructure that breaks it.</td></tr>

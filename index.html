@@ -900,6 +900,15 @@
     },{threshold:0.08,rootMargin:'0px 0px -30px 0px'});
     document.querySelectorAll('.anim').forEach(el=>obs.observe(el));
 
+    // Affiliate link pass-through — appends URL params to Whop checkout links
+    const params = window.location.search;
+    if (params) {
+      document.querySelectorAll('a[href*="whop.com/checkout/"]').forEach(link => {
+        const sep = link.href.includes('?') ? '&' : '?';
+        link.href = link.href + sep + params.substring(1);
+      });
+    }
+
     // Email form — submit without redirect
     const form = document.getElementById('lead-form');
     if (form) {

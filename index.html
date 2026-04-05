@@ -564,14 +564,20 @@
 
     /* ========== RESPONSIVE ========== */
     @media (max-width:768px) {
-      section { padding:80px 0; }
+      section { padding:56px 0; }
       nav .wrap { padding: 0 16px; }
       .nav-brand { font-size: 0.95rem; }
       .nav-cta { padding: 8px 18px; font-size: 0.75rem; }
       .wrap { padding: 0 20px; }
       .wrap-narrow { padding: 0 20px; }
-      .hero { padding: 100px 20px 80px; }
-      .final-cta { padding: 100px 20px; }
+      .hero { padding: 90px 20px 56px; min-height: auto; }
+      .hero-label { margin-bottom: 24px; }
+      .hero h1 { font-size: 2.6rem; margin-bottom: 24px; }
+      .hero-sub { font-size: 1rem; margin-bottom: 36px; line-height: 1.7; }
+      .btn-primary { padding: 16px 40px; font-size: 0.9rem; }
+      .final-cta { padding: 72px 20px 120px; }
+      .sec-heading { margin-bottom: 20px; }
+      .sec-body { font-size: 1rem; line-height: 1.7; }
       .problem-grid, .rhythm-grid { grid-template-columns:1fr; }
       .phases { grid-template-columns:1fr; }
       .app-screenshots { grid-template-columns:1fr; max-width:320px; margin-left:auto; margin-right:auto; }
@@ -581,6 +587,35 @@
       .shift-box.before { border-radius:12px 12px 0 0; }
       .shift-box.after { border-radius:0 0 12px 12px; }
       .app-features { gap:24px; }
+
+      /* Sticky mobile CTA */
+      .mobile-sticky-cta {
+        position: fixed;
+        bottom: 0; left: 0; right: 0;
+        background: rgba(15,15,18,0.96);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-top: 1px solid var(--border-light);
+        padding: 14px 20px;
+        z-index: 99;
+        display: block;
+      }
+      .mobile-sticky-cta a {
+        display: block;
+        width: 100%;
+        padding: 14px 20px;
+        background: linear-gradient(135deg, rgba(212,181,120,0.28), rgba(212,181,120,0.14));
+        border: 1px solid rgba(212,181,120,0.5);
+        color: var(--gold-bright);
+        font-family: 'DM Sans', sans-serif;
+        font-size: 0.95rem; font-weight: 500;
+        letter-spacing: 0.05em; border-radius: 8px;
+        text-decoration: none;
+        text-align: center;
+      }
+    }
+    @media (min-width:769px) {
+      .mobile-sticky-cta { display: none; }
     }
   </style>
 </head>
@@ -891,6 +926,11 @@
       <p class="footer-sub">© 2026 Structured Achievement. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="mobile-sticky-cta">
+    <a href="#pricing">Get Started — $9/mo</a>
+  </div>
 
   <script>
     const nav=document.getElementById('nav');

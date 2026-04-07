@@ -564,29 +564,45 @@
 
     /* ========== RESPONSIVE ========== */
     @media (max-width:768px) {
-      section { padding:56px 0; }
+      section { padding:40px 0; }
       nav .wrap { padding: 0 16px; }
       .nav-brand { font-size: 0.95rem; }
       .nav-cta { padding: 8px 18px; font-size: 0.75rem; }
       .wrap { padding: 0 20px; }
       .wrap-narrow { padding: 0 20px; }
-      .hero { padding: 90px 20px 56px; min-height: auto; }
-      .hero-label { margin-bottom: 24px; }
-      .hero h1 { font-size: 2.6rem; margin-bottom: 24px; }
-      .hero-sub { font-size: 1rem; margin-bottom: 36px; line-height: 1.7; }
+      .hero { padding: 80px 20px 44px; min-height: auto; }
+      .hero-label { margin-bottom: 18px; }
+      .hero h1 { font-size: 2.3rem; margin-bottom: 20px; line-height: 1.12; }
+      .hero h1 br { display: none; }
+      .hero-sub { font-size: 0.98rem; margin-bottom: 28px; line-height: 1.65; }
       .btn-primary { padding: 16px 40px; font-size: 0.9rem; }
-      .final-cta { padding: 72px 20px 120px; }
-      .sec-heading { margin-bottom: 20px; }
-      .sec-body { font-size: 1rem; line-height: 1.7; }
-      .problem-grid, .rhythm-grid { grid-template-columns:1fr; }
-      .phases { grid-template-columns:1fr; }
-      .app-screenshots { grid-template-columns:1fr; max-width:320px; margin-left:auto; margin-right:auto; }
+      .final-cta { padding: 56px 20px 110px; }
+      .final-cta .sec-heading br { display: none; }
+      .sec-heading { margin-bottom: 18px; font-size: 2rem; line-height: 1.15; }
+      .sec-heading br { display: none; }
+      .sec-body { font-size: 0.95rem; line-height: 1.7; }
+      .problem-grid { grid-template-columns:1fr; gap:14px; margin-top:32px; }
+      .problem-card { padding: 24px; }
+      .problem-card p { font-size: 0.84rem; line-height: 1.65; }
+      .phases { grid-template-columns:1fr; gap:14px; }
+      .phase-card { padding: 28px; }
+      .phase-days { display: none; } /* Hide 21-day list on mobile - too much scroll */
+      .app-screenshots { grid-template-columns:1fr; max-width:300px; margin-left:auto; margin-right:auto; gap:14px; }
       .app-screenshots .app-screenshot:nth-child(2) { transform:none; }
-      .pricing-cards { grid-template-columns:1fr; max-width:360px; }
+      .pricing-cards { grid-template-columns:1fr; max-width:360px; gap:16px; }
       .shift-visual { flex-direction:column; }
+      .shift-box { padding: 28px 32px; }
       .shift-box.before { border-radius:12px 12px 0 0; }
       .shift-box.after { border-radius:0 0 12px 12px; }
-      .app-features { gap:24px; }
+      .app-features { gap:20px; }
+
+      /* Hide redundant sections on mobile to cut scroll length */
+      .pull-quote-section { display: none; }
+      .rhythm { display: none; }
+      .email-capture { display: none; } /* Sits in the conversion path - desktop only */
+
+      /* Tighten dividers on mobile */
+      .divider { padding: 8px 32px; }
 
       /* Sticky mobile CTA */
       .mobile-sticky-cta {

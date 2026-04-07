@@ -618,6 +618,11 @@
       .rhythm { display: none; }
       .email-capture { display: none; } /* Sits in the conversion path - desktop only */
 
+      /* Hide dividers that immediately precede hidden mobile sections */
+      .divider:has(+ .rhythm),
+      .divider:has(+ .email-capture),
+      .divider:has(+ .pull-quote-section) { display: none; }
+
       /* Tighten dividers on mobile */
       .divider { padding: 8px 32px; }
 

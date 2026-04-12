@@ -5,7 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Structured Achievement — Install Your Personal Operating System</title>
   <meta name="description" content="A 21-day system that installs discipline, structure, and execution into your daily life. Not motivation. Infrastructure.">
-  
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://structuredachievement.com/">
+  <meta property="og:title" content="Structured Achievement — Install Your Personal Operating System">
+  <meta property="og:description" content="A 21-day system that installs discipline, structure, and execution into your daily life. Not motivation. Infrastructure.">
+  <meta property="og:image" content="https://img.youtube.com/vi/w_dwPn8kaoo/maxresdefault.jpg">
+  <meta property="og:video" content="https://www.youtube.com/embed/w_dwPn8kaoo">
+  <meta property="og:video:type" content="text/html">
+  <meta property="og:video:width" content="1920">
+  <meta property="og:video:height" content="1080">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Structured Achievement — Install Your Personal Operating System">
+  <meta name="twitter:description" content="A 21-day system that installs discipline, structure, and execution into your daily life. Not motivation. Infrastructure.">
+  <meta name="twitter:image" content="https://img.youtube.com/vi/w_dwPn8kaoo/maxresdefault.jpg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
@@ -96,11 +111,10 @@
 
     /* ========== HERO ========== */
     .hero {
-      min-height: 100vh;
       display: flex; align-items: center; justify-content: center;
       text-align: center;
       position: relative;
-      padding: 100px 32px 80px;
+      padding: 60px 32px 80px;
       overflow: hidden;
     }
     /* Atmospheric gold light */
@@ -655,6 +669,56 @@
     @media (min-width:769px) {
       .mobile-sticky-cta { display: none; }
     }
+    /* ========== VSL ========== */
+    .vsl-section {
+      padding: 140px 32px 48px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+    .vsl-wrap {
+      width: 100%;
+      max-width: 860px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+    }
+    .vsl-label {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      opacity: 0.85;
+    }
+    .vsl-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #000;
+      box-shadow:
+        0 40px 120px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(212, 181, 120, 0.18),
+        0 0 80px rgba(212, 181, 120, 0.08);
+    }
+    .vsl-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    @media (max-width: 720px) {
+      .vsl-section { padding: 110px 20px 32px; }
+      .vsl-wrap { gap: 20px; }
+      .vsl-frame { border-radius: 10px; }
+    }
+
   </style>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNQY6KNZR3"></script>
@@ -674,6 +738,21 @@
       <a href="#pricing" class="nav-cta">Get Started</a>
     </div>
   </nav>
+
+  <!-- ========== VSL ========== -->
+  <section class="vsl-section">
+    <div class="vsl-wrap">
+      <p class="vsl-label">Watch — 90 seconds</p>
+      <div class="vsl-frame">
+        <iframe
+          src="https://www.youtube.com/embed/w_dwPn8kaoo?rel=0&modestbranding=1&playsinline=1"
+          title="Structured Achievement"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
 
   <!-- ========== HERO ========== -->
   <section class="hero">
